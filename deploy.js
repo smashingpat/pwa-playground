@@ -15,6 +15,8 @@ const ghpages = require('gh-pages');
             detailedReport: true,
             minify: true,
             sourceMaps: false,
+            publicUrl: '/pwa-playground/',
+            watch: false,
         });
         bundler.on('bundled', resolve);
         bundler.on('buildError', reject);
